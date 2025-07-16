@@ -1,0 +1,23 @@
+
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sfondo -->
+  <rect width="300" height="200" fill="#ffffff"/>
+
+  <!-- Spicchi della torta -->
+  <circle r="60" cx="150" cy="100" fill="#eeeeee" />
+
+  <!-- Spicchio 1 - 40% -->
+  <path d="M150,100 L150,40 A60,60 0 0,1 206.6,123.4 Z" fill="#d32f2f"/>
+  <!-- Spicchio 2 - 30% -->
+  <path d="M150,100 L206.6,123.4 A60,60 0 0,1 123.4,159.3 Z" fill="#ff6659"/>
+  <!-- Spicchio 3 - 20% -->
+  <path d="M150,100 L123.4,159.3 A60,60 0 0,1 94.2,94.2 Z" fill="#ffccbc"/>
+  <!-- Spicchio 4 - 10% -->
+  <path d="M150,100 L94.2,94.2 A60,60 0 0,1 150,40 Z" fill="#ef9a9a"/>
+
+  <!-- Etichette percentuali -->
+  <text x="175" y="60" font-size="12" fill="#333">40%</text>
+  <text x="190" y="140" font-size="12" fill="#333">30%</text>
+  <text x="120" y="165" font-size="12" fill="#333">20%</text>
+  <text x="85" y="80" font-size="12" fill="#333">10%</text>
+</svg>
