@@ -8,8 +8,27 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
-    <h1 class="text-3xl">Welcome to LoremMenager</h1>
 
+    <!-- NavBar -->
+    <nav class="relative container mx-auto p-6">
+        <!--Flex Container-->
+        <div class="flex items-center justify-between">
+            <!--Logo-->
+            <img src="./img/logo.svg" alt="Logo">
+            <!--Menu Items-->
+            <div class="hidden md:flex space-x-6">
+                <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Pricing</a>
+                <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Product</a>
+                <a class="hover:text-[var(--darkGrayishBlue)]" href="#">About Us</a>
+                <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Careers</a>
+                <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Community</a>
+            </div>
+            <!--Button-->
+            <div class="hidden md:flex">
+                <a class="hidden md:block p-3 px-6 pt-2 text-white bg-[var(--brightRed)] rounded-full baseline hover:bg-[var(--brightRedLight)]" href="#">Get Started</a>
+            </div>
+        </div>
+    </nav>
+    
 </body>
 </html>
