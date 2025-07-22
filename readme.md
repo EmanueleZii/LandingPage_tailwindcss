@@ -9,12 +9,10 @@ La pagina è costruita con un design pulito e moderno, ottimizzata per dispositi
 
 ## Caratteristiche principali
 
-- Layout responsive e mobile-first
+- Layout responsive 
 - Utilizzo completo di TailwindCSS senza dipendenze esterne per il CSS
-- Sezioni comuni di una landing page: Hero, Features, Call to Action (CTA), Footer
+- Sezioni comuni di una landing page: Hero, Features, Footer
 - Facile personalizzazione con le classi utility di Tailwind
-
-
 
 ---
 
