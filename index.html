@@ -10,25 +10,48 @@
 <body>
 
     <!-- NavBar -->
-    <nav class="relative container mx-auto p-6">
-        <!--Flex Container-->
-        <div class="flex items-center justify-between">
-            <!--Logo-->
-            <img src="./img/logo.svg" alt="Logo">
-            <!--Menu Items-->
-            <div class="hidden space-x-6 md:flex">
-                <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Prezzo</a>
-                <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Prodotti</a>
-                <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Chi Siamo</a>
-                <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Lavora Con Noi</a>
-                <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Community</a>
-            </div>
-            <!--Button-->
-            <div class="hidden md:flex">
-                <a class="hidden md:block p-3 px-6 pt-2 text-white bg-[var(--brightRed)] rounded-full baseline hover:bg-[var(--brightRedLight)]" href="#">Inizia Ora!</a>
-            </div>
-        </div>
-    </nav>
+<nav class="relative container mx-auto p-6">
+  <!--Flex Container-->
+  <div class="flex items-center justify-between">
+    <!--Logo-->
+    <img src="./img/logo.svg" alt="Logo" />
+
+    <!-- Desktop Menu Items -->
+    <div class="hidden space-x-6 md:flex">
+      <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Prezzo</a>
+      <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Prodotti</a>
+      <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Chi Siamo</a>
+      <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Lavora Con Noi</a>
+      <a class="hover:text-[var(--darkGrayishBlue)]" href="#">Community</a>
+    </div>
+
+    <!-- Button desktop -->
+    <div class="hidden md:flex">
+      <a class="p-3 px-6 pt-2 text-white bg-[var(--brightRed)] rounded-full hover:bg-[var(--brightRedLight)]" href="#">Inizia Ora!</a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <button id="menu-btn" class="block md:hidden z-50 focus:outline-none">
+      <div class="hamburger flex flex-col justify-between w-6 h-5">
+        <span class="hamburger-top w-full h-[3px] bg-black transition-transform duration-300"></span>
+        <span class="hamburger-middle w-full h-[3px] bg-black transition-opacity duration-300"></span>
+        <span class="hamburger-bottom w-full h-[3px] bg-black transition-transform duration-300"></span>
+      </div>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="menu"
+    class="absolute right-6 top-20 hidden flex-col items-end bg-white py-6 px-8 space-y-4 font-bold drop-shadow-md md:hidden z-40"
+  >
+    <a href="#" class="hover:text-[var(--brightRed)]">Prezzo</a>
+    <a href="#" class="hover:text-[var(--brightRed)]">Prodotti</a>
+    <a href="#" class="hover:text-[var(--brightRed)]">Chi Siamo</a>
+    <a href="#" class="hover:text-[var(--brightRed)]">Lavora Con Noi</a>
+    <a href="#" class="hover:text-[var(--brightRed)]">Community</a>
+  </div>
+</nav>
 
     <!-- Hero Section -->
 <section id="hero">
@@ -173,54 +196,97 @@
 </section>
 
 <!--CTA Section-->
-<section id="cta" class="bg-[var(--brightRedSupLight)]">
+<section id="cta" class="bg-[var(--brightRedLight)]">
     <div class="container flex flex-col items-center px-6 py-16 mx-auto space-y-6 md:space-y-0 md:flex-row md:justify-between">
         <h2 class="text-4xl font-bold text-center md:text-left">Inizia a gestire i tuoi progetti oggi stesso!</h2>
         <a class="p-3 px-6 pt-2 text-white bg-[var(--brightRed)] rounded-full baseline hover:bg-[var(--brightRedLight)]" href="#">Prova Gratis</a>
     </div>
 
 <!-- Footer -->
-<footer class="bg-[#333] text-white">
-  <div class="container mx-auto px-6 py-8">
-    <!-- Contenitore principale -->
-    <div class="flex flex-col space-y-8 md:flex-row md:justify-between md:items-center"> 
-    <!-- Logo -->
-    <div class="flex justify-center md:justify-start">
-        <img src="./img/logo.svg" alt="Logo" class="w-32">
-    </div>
+    <footer class="bg-[#333]">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!-- Logo and social links container -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2022, Tutti i diritti riservati
+          </div>
+          <!-- Logo -->
+          <div>
+            <img src="img/logo-white.svg" class="h-8" alt="" />
+          </div>
+          <!-- Social Links Container -->
+          <div class="flex justify-center space-x-4">
+            <!-- Link 1 -->
+            <a href="#">
+              <img src="img/icon-facebook.svg" alt="" class="h-4" />
+            </a>
+            <!-- Link 2 -->
+            <a href="#">
+              <img src="img/icon-youtube.svg" alt="" class="h-4" />
+            </a>
+            <!-- Link 3 -->
+            <a href="#">
+              <img src="img/icon-twitter.svg" alt="" class="h-4" />
+            </a>
+            <!-- Link 4 -->
+            <a href="#">
+              <img src="img/icon-pinterest.svg" alt="" class="h-4" />
+            </a>
+            <!-- Link 5 -->
+            <a href="#">
+              <img src="img/icon-instagram.svg" alt="" class="h-4" />
+            </a>
+          </div>
+        </div>
+        <!-- List Container -->
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Home</a>
+            <a href="#" class="hover:text-brightRed">Prezzo</a>
+            <a href="#" class="hover:text-brightRed">Prodotti</a>
+            <a href="#" class="hover:text-brightRed">Chi Siamo</a>
+            </div>
+            <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Lavora Con Noi</a>
+            <a href="#" class="hover:text-brightRed">Community</a>
+            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+            </div>
+        </div>
 
-    <!-- Link -->
-    <div class="flex justify-center space-x-6">
-        <a class="hover:text-[var(--brightRedLight)]" href="#">Privacy</a>
-        <a class="hover:text-[var(--brightRedLight)]" href="#">Termini</a>
-        <a class="hover:text-[var(--brightRedLight)]" href="#">Contatti</a>
-    </div>
-
-    <!-- Newsletter -->
-    <div class="flex flex-col items-center ml-20 space-y-2 md:flex-row md:space-y-0 md:space-x-2">
-        <input
-        type="text"
-        placeholder="Iscriviti alla nostra newsletter"
-        class="px-4 py-2 rounded-full bg-white text-black w-64"
-        />
-        <button class="px-4 py-2 bg-[var(--brightRed)] text-white rounded-full hover:bg-[var(--brightRedLight)]">
-        Iscriviti
-        </button>
-    </div>
-
-    <!-- Social -->
-    <div class="flex justify-center px-auto px-4 ml-30 ">
-        <a href="#"><img src="./img/icon-facebook.svg" alt="Facebook" class="w-6 h-6"></a>
-        <a href="#"><img src="./img/icon-twitter.svg" alt="Twitter" class="w-6 h-6"></a>
-        <a href="#"><img src="./img/icon-instagram.svg" alt="Instagram" class="w-6 h-6"></a>
-    </div>
-
-    <!-- Copyright -->
-    <div class="text-center mt-4 md:mt-0">
-        <p class="text-sm">© 2023 Manage. Tutti i diritti riservati.</p>
-    </div>
+        <!-- Input Container -->
+        <div class="flex flex-col justify-between">
+        <form>
+            <div class="flex space-x-3">
+                <input
+                type="text"
+                class="flex-1 px-4 rounded-full focus:outline-none text-black bg-[#fff] bg-opacity-20 placeholder:text-white"/>
+            <button
+                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
+                Vai
+            </button>
+            </div>
+        </form>
+        <div class="hidden text-white md:block">
+            Copyright &copy; 2022, Tutti i diritti riservati
+        </div>
+        </div>
     </div>
 </footer>
+<script >
+    const btn = document.getElementById('menu-btn')
+    const nav = document.getElementById('menu')
+
+    btn.addEventListener('click', () => {
+    btn.classList.toggle('open')
+    nav.classList.toggle('flex')
+    nav.classList.toggle('hidden')
+    })
+</script>
 
 </body>
 </html>
