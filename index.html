@@ -179,27 +179,48 @@
         <a class="p-3 px-6 pt-2 text-white bg-[var(--brightRed)] rounded-full baseline hover:bg-[var(--brightRedLight)]" href="#">Prova Gratis</a>
     </div>
 
-<!--Footer-->
+<!-- Footer -->
 <footer class="bg-[#333] text-white">
-    <div class="container mx-auto px-6 py-8">
-        <div class="flex flex-col items-center space-y-6 md:flex-row md:justify-between">
-            <div class="flex items-center space-x-4">
-                <img src="./img/logo.svg" alt="Logo"> 
-            </div>
-            <div class="flex space-x-6">
-                <a class="hover:text-[var(--brightRedLight)]" href="#">Privacy</a>
-                <a class="hover:text-[var(--brightRedLight)]" href="#">Termini</a>
-                <a class="hover:text-[var(--brightRedLight)]" href="#">Contatti</a>
-            </div>
-            <div class="flex space-x-4">
-                <a href="#"><img src="./img/icon-facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="./img/icon-twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="./img/icon-instagram.svg" alt="Instagram"></a>
-            </div>
-        </div>
-        <div class="mt-auto max-auto text-center">
-            <p class="text-sm">© 2023 Manage. Tutti i diritti riservati.</p>
-        </div>
+  <div class="container mx-auto px-6 py-8">
+    <!-- Contenitore principale -->
+    <div class="flex flex-col space-y-8 md:flex-row md:justify-between md:items-center">
+      
+      <!-- Logo -->
+      <div class="flex justify-center md:justify-start">
+        <img src="./img/logo.svg" alt="Logo" class="w-32">
+      </div>
+
+      <!-- Link -->
+      <div class="flex justify-center space-x-6">
+        <a class="hover:text-[var(--brightRedLight)]" href="#">Privacy</a>
+        <a class="hover:text-[var(--brightRedLight)]" href="#">Termini</a>
+        <a class="hover:text-[var(--brightRedLight)]" href="#">Contatti</a>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-2">
+        <input
+          type="text"
+          placeholder="Iscriviti alla nostra newsletter"
+          class="px-4 py-2 rounded-full bg-white text-black w-64"
+        />
+        <button class="px-4 py-2 bg-[var(--brightRed)] text-white rounded-full hover:bg-[var(--brightRedLight)]">
+          Iscriviti
+        </button>
+      </div>
+
+      <!-- Social -->
+      <div class="flex justify-center space-x-4">
+        <a href="#"><img src="./img/icon-facebook.svg" alt="Facebook" class="w-6 h-6"></a>
+        <a href="#"><img src="./img/icon-twitter.svg" alt="Twitter" class="w-6 h-6"></a>
+        <a href="#"><img src="./img/icon-instagram.svg" alt="Instagram" class="w-6 h-6"></a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-8 mx-auto text-center">
+        <p class="text-sm">© 2023 Manage. Tutti i diritti riservati.</p>
+    </div>
     </div>
 </footer>
 
