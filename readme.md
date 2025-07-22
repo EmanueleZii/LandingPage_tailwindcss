@@ -23,7 +23,12 @@ La pagina è costruita con un design pulito e moderno, ottimizzata per dispositi
 - (Opzionale) JavaScript vanilla per funzionalità interattive
 
 ---
+## Link 
+[landingPageTailwindcss](https://emanuelezii.github.io/LandingPage_tailwindcss/)
 
+
+
+---
 ## Come usare
 
 1. Clona il repository:
